@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  padding: 15px;
+  margin: 15px;
 }
 
 .App-logo {
@@ -12,6 +14,89 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+element.style {
+  flex: 1 0 auto;
+}
+
+.content {
+  text-align: center;
+  margin: 100px;
+  padding: 15px;
+  margin-left: 400px;
+  margin-right: 400px;
+
+  padding-top : 90px ;
+  position: absolute;
+  border-radius: 10px;
+
+}
+
+
+.grid{
+  text-align: center;
+  padding: 0;
+  border-style: none;
+  margin: 0px 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 25px;   
+  padding-right: 70px;
+  /* padding-left: 10px; */
+}
+
+
+element.style {
+  padding-left: 50px;
+  padding-right: 50px;
+  flex: 1 0 auto;
+}
+
+
+.ant-progress-circle .ant-progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  margin: 0;
+  padding: 5px 5px;
+  border-radius: 60px;
+  border: 50px ;
+  color: rgba(98, 0, 255, 0.85);
+  font-size: 1em;
+  line-height: 1;
+  white-space: normal;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font: 15px Arial, sans-serif;
+  /* background: #f00; */
+  border-width: 2px;
+  border-style: solid;
+  background: white;
+  border-color: Purple;
+}
+
+.anticon{
+height: 35px;
+padding: 15px;
+padding-top: 10px;
+border-radius: 10px;
+background: purple;
+margin-top:20px;
+flex-direction: column;
+}
+
+.icon{
+  display:grid;
+  height: 0px;
+  margin-top: 50px;
+  font-size : medium;
+}
+
+.ant-card-hoverable  {
+  border-radius: 100px;
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -27,7 +112,7 @@
 .App-link {
   color: #61dafb;
 }
-
+ 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +121,27 @@
     transform: rotate(360deg);
   }
 }
+
+
+@media only  screen and (max-width: 700px) {
+  .icon {
+    display: none;
+  }
+}
+
+/* @media screen and (max-width: 700px) {
+  .column {
+   flex: 100% !important;
+   margin: 1rem;
+   width: 240px;
+   height: 10px;    
+ } 
+ .icon  {  
+   display:none;
+ }
+}  */
+
+
+
+@import 'antd/dist/antd.css';
+
